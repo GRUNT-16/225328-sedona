@@ -8,7 +8,6 @@
     <header class="page-header">
       <nav class="main-menu">
         <ul>
-          <!--here I think classes isn't necessary. For styles may be used nth-child-->
           <li><a href="#">информация</a></li>
           <li><a href="#">фото и видео</a></li>
           <li><a href="#">карта штата</a></li>
@@ -16,7 +15,7 @@
         </ul>
       </nav>
       <a>
-       <img src="img/sedona-logo.png" class="logo" width="137" height="70" alt="logo">
+       <h1><img src="img/sedona-logo.png" class="logo" width="137" height="70" alt="logo"></h1>
      </a>
     </header>
     <main class="page-content">
@@ -24,20 +23,18 @@
         <!--background-image-->
       </section>
       <section class = "intro">
-        <h3>седона - небольшой городок в аризоне, заслуживающий большего!</h3>
+        <h2>седона - небольшой городок в аризоне, заслуживающий большего!</h2>
         <p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p>
       </section>
       <section class="advantages-large-1">
-        <section class="advantages-large-1">
-          <section class="text-block">
-            <h3>настоящий городок</h3>
-            <p>-№1-</p>
-            <p>седона - не аттракцион для туристов там течет своя жизнь</p>
-          </section>
-          <section class="image-block">
-            <img src="img/advantages-previev-image-1.jpg" alt="advantages-№1" width="800" height="256">
-          </section>
-        </section>
+        <div class="advantages-text-block">
+          <h3>настоящий городок</h3>
+          <p>-№1-</p>
+          <p>седона - не аттракцион для туристов там течет своя жизнь</p>
+        </div>
+        <div class="advantages-image-block">
+          <img src="img/advantages-previev-image-1.jpg" alt="advantages-№1" width="800" height="256">
+        </div>
       </section>
       <section class="advice">
         <ul class="advice-list">
@@ -55,15 +52,15 @@
           </li>
         </ul>
       </section>
-      <section class="adantegs-large-2">
-          <section class="image-block">
-            <img src="img/advantages-previev-image-2.jpg" alt="advantage-№2" width="800" height="256">
-          </section>
-        <section class="text-block">
+      <section class="advantegs-large-2">
+        <div class="advantages-image-block">
+          <img src="img/advantages-previev-image-2.jpg" alt="advantage-№2" width="800" height="256">
+        </div>
+        <div class="advantages-text-block">
           <h3>там есть мост дьявола</h3>
           <span>-№2-</span>
           <p>да, по нему можно пройти! если конечно вы осмелитесь!</p>
-        </section>
+        </div>
       </section>
       <section class="advantages">
         <ul class="advantages-list">
@@ -87,33 +84,36 @@
       <section class="interested-in">
         <h2>заинтересовались?</h2>
         <p>укажите предполагаемые даты поездки и мы покажем лучшие предложения гостиниц в седоне</p>
-      </section>
-      <!--here will be form later-->
-      <span>
+        <span>
         <!--map-->
-      </span>
-      <section class="trip-info">
-        <header class="trip-info-header">
-          <h1>поиск гостиницы в седоне</h1>
-        </header>
-        <form method="get" name="trip-info" target="#">
-          <label for="trip-info-arrival-date">дата заезда:</label>
-          <input type="date" id="trip-info-arrival-date" name="arrival-date">
-          <label for="trip-info-departure-date">дата выезда:</label>
-          <input type="date" id="trip-info-departure-date" name="departure-date">
-          <label for="trip-info-adults-quantity">взрослые:</label>
-          <input type="number" id="trip-info-adults-quantity" name="adult-quantity">
-          <label for="trip-info-children-quantity">дети:</label>
-          <input type="number" id="trip-info-children-quantity" name="children-quantity">
-          <input type="submit" value="отпарвить">
+        </span>
+        <button type="button">поиск гостиницы в седоне</button>
+        <form method="post" name="trip-info" action="https://echo.htmlacademy.ru">
+          <div class="arrival-date">
+            <label for="trip-info-arrival-date">дата заезда:</label>
+            <input type="date" id="trip-info-arrival-date" name="arrival-date">
+          </div>
+          <div class="departure-date">
+            <label for="trip-info-departure-date">дата выезда:</label>
+            <input type="date" id="trip-info-departure-date" name="departure-date">
+          </div>
+          <div class="adults">
+            <label for="trip-info-adults-quantity">взрослые:</label>
+            <input type="number" id="trip-info-adults-quantity" name="adult-quantity">
+          </div>
+          <div class="children">
+            <label for="trip-info-children-quantity">дети:</label>
+            <input type="number" id="trip-info-children-quantity" name="children-quantity">
+          </div>
+          <button type="submit" value="отпарвить"></button>
         </form>
       </section>
     </main>
     <footer>
-      <section class="hashtag">
+      <div class="hashtag">
         <a href="#">#visitsedona</a>
-      </section>
-      <section class="social">
+      </div>
+      <div class="social">
         <!--twitter-->
         <a class="btn" href="#">
           <img src="img/SVG/svg-sedona/twitter.svg" alt="twitter" width="17" height="15">
@@ -126,14 +126,13 @@
         <a class="btn" href="#">
           <img src="img/SVG/svg-sedona/youtube.svg" alt="youtube" width="17" height="15">
         </a>
-      </section>
-      <section class="html-academy-logo">
+      </div>
+      <div class="html-academy-logo">
         <a href="#">
           website by
           <img src="img/SVG/svg-sedona/logo-htmlacademy.svg" alt="htmlacademy" width="115" height="41">
         </a>
-      </section>
-      <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+      </div>
     </footer>
   </body>
 </html>
