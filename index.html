@@ -8,90 +8,106 @@
     <header class="page-header">
       <nav class="main-menu">
         <ul>
+          <!--here I think classes isn't necessary. For styles may be used nth-child-->
           <li><a href="#">информация</a></li>
           <li><a href="#">фото и видео</a></li>
           <li><a href="#">карта штата</a></li>
-          <li><a href="">гостиницы</a></li>
+          <li><a href="catalog.html">гостиницы</a></li>
         </ul>
       </nav>
-      <img src="img\Layer 8.png">
+      <a>
+       <img src="img/sedona-logo.png" class="logo" width="137" height="70" alt="logo">
+     </a>
     </header>
-    <main class="content">
-      <div class="intro-picture">
-        <img src="img\background photo.png" alt="background-photo">
-        <img src="img\Welcome.png" alt="text">
-        <img src="img\Shape 1 copy 3.png">
-      </div>
+    <main class="page-content">
+      <section class="intro-picture">
+        <!--background-image-->
+      </section>
       <section class = "intro">
         <h3>седона - небольшой городок в аризоне, заслуживающий большего!</h3>
         <p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p>
       </section>
-      <div class="text-picture">
-        <div class="text">
-          <h3>настоящий городок</h3>
-          <p>-№1-</p>
-          <p>седона - не аттракцион для туристов там течет своя жизнь</p>
-        </div>
-        <div class="image">
-          <img src="img\Layer 10.png" alt="picture-№1" class="block block1">
-        </div>
-      </div>
+      <section class="advantages-large-1">
+        <section class="advantages-large-1">
+          <section class="text-block">
+            <h3>настоящий городок</h3>
+            <p>-№1-</p>
+            <p>седона - не аттракцион для туристов там течет своя жизнь</p>
+          </section>
+          <section class="image-block">
+            <img src="img/advantages-previev-image-1.jpg" alt="advantages-№1" width="800" height="256">
+          </section>
+        </section>
+      </section>
       <section class="advice">
-        <ul>
-          <li class="inline">
-            <img src="img\SVG\svg-sedona\icon-1.svg" alt="icon-1">
+        <ul class="advice-list">
+          <li class="advice-item">
             <h3>жилье</h3>
             <p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
-          <li class="inline">
-            <img src="img\SVG\svg-sedona\icon-2.svg" alt="icon-2">
+          <li class="advice-item">
             <h3>еда</h3>
             <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
          </li>
-          <li class="inline">
-            <img src="img\SVG\svg-sedona\icon-3.svg" alt="icon-3">
+          <li class="advice-item">
            <h3>сувениры</h3>
            <p>не только китайского, но и месного производства!</p>
           </li>
         </ul>
       </section>
-      <section class="text-picture">
-        <li class="image">
-          <img src="img\Layer 5.png" alt="picture-№2" class="block block1">
-        </li>
-        <div class="text">
+      <section class="adantegs-large-2">
+          <section class="image-block">
+            <img src="img/advantages-previev-image-2.jpg" alt="advantage-№2" width="800" height="256">
+          </section>
+        <section class="text-block">
           <h3>там есть мост дьявола</h3>
-          <p>-№2-</p>
+          <span>-№2-</span>
           <p>да, по нему можно пройти! если конечно вы осмелитесь!</p>
-        </div>
+        </section>
       </section>
-      <section class="n-inline">
-        <ul>
-          <li class="inline">
+      <section class="advantages">
+        <ul class="advantages-list">
+          <li class="advantegs-item">
             <h3>небольшая площадь</h3>
-            <p>-№3-</p>
+            <span>-№3-</span>
             <p>все достопримеча- тельности находятся совсем близко</p>
           </li>
-          <li class="inline">
+          <li class="advantegs-item">
             <h3>красивая дорога</h3>
             <p>-№4-</p>
             <p>ехать в седону из лас-вегаса совсем не скучно</p>
           </li>
-          <li class="inline">
+          <li class="advantegs-item">
             <h3>мало туристов</h3>
             <p>-№5-</p>
             <p>большинсто едет в гранд коньон и толпится там</p>
           </li>
         </ul>
       </section>
-      <div>
+      <section class="interested-in">
         <h2>заинтересовались?</h2>
         <p>укажите предполагаемые даты поездки и мы покажем лучшие предложения гостиниц в седоне</p>
-      </div>
+      </section>
       <!--here will be form later-->
       <span>
         <!--map-->
       </span>
+      <section class="trip-info">
+        <header class="trip-info-header">
+          <h1>поиск гостиницы в седоне</h1>
+        </header>
+        <form method="get" name="trip-info" target="#">
+          <label for="trip-info-arrival-date">дата заезда:</label>
+          <input type="date" id="trip-info-arrival-date" name="arrival-date">
+          <label for="trip-info-departure-date">дата выезда:</label>
+          <input type="date" id="trip-info-departure-date" name="departure-date">
+          <label for="trip-info-adults-quantity">взрослые:</label>
+          <input type="number" id="trip-info-adults-quantity" name="adult-quantity">
+          <label for="trip-info-children-quantity">дети:</label>
+          <input type="number" id="trip-info-children-quantity" name="children-quantity">
+          <input type="submit" value="отпарвить">
+        </form>
+      </section>
     </main>
     <footer>
       <section class="hashtag">
@@ -100,21 +116,21 @@
       <section class="social">
         <!--twitter-->
         <a class="btn" href="#">
-          <img src="img\SVG\svg-sedona\twitter.svg" alt="twitter">
+          <img src="img/SVG/svg-sedona/twitter.svg" alt="twitter" width="17" height="15">
         </a>
         <!--facebook-->
         <a class="btn" href="#">
-          <img src="img\SVG\svg-sedona\fb-icon.svg" alt="facebook">
+          <img src="img/SVG/svg-sedona/fb-icon.svg" alt="facebook" width="17" height="15">
         </a>
         <!--youtube-->
         <a class="btn" href="#">
-          <img src="img\SVG\svg-sedona\youtube.svg" alt="youtube">
+          <img src="img/SVG/svg-sedona/youtube.svg" alt="youtube" width="17" height="15">
         </a>
       </section>
       <section class="html-academy-logo">
         <a href="#">
           website by
-          <img src="img\SVG\svg-sedona\logo-htmlacademy.svg" alt="htmlacademy" width="115" height="41">
+          <img src="img/SVG/svg-sedona/logo-htmlacademy.svg" alt="htmlacademy" width="115" height="41">
         </a>
       </section>
       <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>

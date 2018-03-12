@@ -14,98 +14,121 @@
           <li><a>гостиницы</a></li>
         </ul>
       </nav>
-      <img src="img/Layer 8.png" alt="logo">
-      <span>
-        <!--filter-->
-      </span>
+      <a href="index.html">
+        <img src="img/sedona-logo.png" alt="logo" class="sedona-logo" width="137" height="70">
+      </a>
+      <form method="get" name="filter-values" target="#">
+        <h5 class="filter-caption">инфраструктура:</h5>
+        <input type="checkbox" id="filter-infrostructure-checkbox-1" name="swimming-pool" checked>
+        <label for="filter-infrostructure-checkbox-1">бассейн</label>
+        <input type="checkbox" id="filter-infrastructure-checkbox-2" name="parking">
+        <label for="filter-infrastructure-checkbox-2">парковка</label>
+        <input type="checkbox" id="filter-infrostructure-checkbox-3" name="wifi">
+        <label for="filter-infrostructure-checkbox-3">wifi</label>
+        <h5 class="filter-caption">тип жилья</h5>
+        <input type="checkbox" id="filter-type-checkbox-1" name="hotel" checked>
+        <label for="filter-type-checkbox-1">гостиница</label>
+        <input type="checkbox" id="filter-type-checkbox-2" name="motel" checked>
+        <label for="filter-type-checkbox-2">мотель</label>
+        <input type="checkbox" id="filter-type-checkbox-3" name="apartments" checked>
+        <label for="filter-type-checkbox-3">апартаменты</label>
+        <h5 class="filter-caption">стоимость в сутки (р)</h5>
+        <label for="filter-from-to-slider">
+          <span class="from-value">от 0</span>
+          <span class="to-value">до 3000</span>
+        </label>
+        <input type="range" id="filter-from-to-slider" name="from-to"><!--I've read that doble slider may be only with JS http://jqueryui.com/slider/#range-->
+      </form>
     </header>
-    <main>
-      <div class="search-options">
+    <main class="page-content">
+      <section class="search-options">
         <h4>найдено: 3</h4> <!--somehow with JS-->
-        <div class="sort">
+        <section class="sort">
           сортировка:
           <a>по цене</a>
           <a>по типу</a>
           <a>по рейтингу</a>
-        </div>
-        <div class="storing-buttons">
+        </section>
+        <section class="storing-buttons">
           <a href="#">
             <span class="icon-up"></span>
           </a>
           <a class="curent" href="#">
             <span class="icon-down"></span>
           </a>
-        </div>
-      </div>
-      <li class="hotel">
-        <div class="img">
-          <img src="img\Layer 89 copy.png">
-        </div>
-        <div class="info">
-          <h4>amara resort & spa</h4>
-          гостиница    от 4000 р.
-          <a href="#" class="btn">подробнее</a>
-          <a href="#" class="btn">забронировать</a>
-        </div>
-        <div class="rating">
-          <img src="img\SVG\svg-sedona\star.svg">
-          <p>рейтинг: 8,5</p>
-        </div>
-      </li>
-      <li class="hotel">
-        <div class="img">
-          <img src="img\Layer 22.png">
-        </div>
-        <div class="info">
-          <h4>desert quail inn</h4>
-          мотель    от 3000 р.
-          <a href="#" class="btn">подробнее</a>
-          <a href="#" class="btn">забронировать</a>
-        </div>
-        <div class="rating">
-          <img src="img\SVG\svg-sedona\star.svg">
-          <p>рейтинг: 8,9</p>
-        </div>
-      </li>
-      <li class="hotel">
-        <div class="img">
-          <img src="img\Layer 21.png">
-        </div>
-        <div class="info">
-          <h4>villas at poco diablo</h4>
-          апартаменты    от 2000 р.
-          <!--background-image + repeat-x-->
-          <a href="#" class="btn">подробнее</a>
-          <a href="#" class="btn">забронировать</a>
-        </div>
-        <div class="rating">
-          <img src="img\SVG\svg-sedona\star.svg">
-          <p>рейтинг: 9,2</p>
-        </div>
-      </li>
+        </section>
+      </section>
+      <ul class="hotel-list">
+        <li class="hotel">
+          <section class="img">
+            <img src="img/catalog-item-1.jpg" width="135" height="90" alt="hotel-1">
+          </section>
+          <section class="info">
+            <h4>amara resort & spa</h4>
+            гостиница    от 4000 р.
+            <a href="#" class="btn">подробнее</a>
+            <a href="#" class="btn">забронировать</a>
+          </section>
+          <section class="rating">
+            <span class="stars-1"></span>
+            <p>рейтинг: 8,5</p>
+          </section>
+        </li>
+        <li class="hotel">
+          <section class="img">
+            <img src="img/catalog-item-2.jpg" width="135" height="90" alt="hotel-2">
+          </section>
+          <section class="info">
+            <h4>desert quail inn</h4>
+            мотель    от 3000 р.
+            <a href="#" class="btn">подробнее</a>
+            <a href="#" class="btn">забронировать</a>
+          </section>
+          <section class="rating">
+            <span class="stars-2"></span>
+            <p>рейтинг: 8,9</p>
+          </section>
+        </li>
+        <li class="hotel">
+          <section class="img">
+            <img src="img/catalog-item-3.jpg" width="145" height="90" alt="hotel-3">
+          </section>
+          <section class="info">
+            <h4>villas at poco diablo</h4>
+            апартаменты    от 2000 р.
+            <!--background-image + repeat-x-->
+            <a href="#" class="btn">подробнее</a>
+            <a href="#" class="btn">забронировать</a>
+          </section>
+          <section class="rating">
+            <span class="stars-3"></span>
+            <p>рейтинг: 9,2</p>
+          </section>
+        </li>
+      </ul>
     </main>
     <footer class="page-footer">
       <section class="hashtag">
         <a href="#">#visitsedona</a>
       </section>
-      <section class="social">
+      <section class="social-links">
         <!--twitter-->
         <a class="btn" href="#">
-          <img src="img\SVG\svg-sedona\twitter.svg" alt="twitter">
+          <img src="img/SVG/svg-sedona/twitter.svg" alt="twitter" width="17" height="15">
         </a>
         <!--facebook-->
         <a class="btn" href="#">
-          <img src="img\SVG\svg-sedona\fb-icon.svg" alt="facebook">
+          <img src="img/SVG/svg-sedona/fb-icon.svg" alt="facebook" width="17" height="15">
         </a>
         <!--youtube-->
         <a class="btn" href="#">
-          <img src="img\SVG\svg-sedona\youtube.svg" alt="youtube">
+          <img src="img//SVG/svg-sedona/youtube.svg" alt="youtube" width="17" height="15">
         </a>
       </section>
       <section class="html-academy-logo">
         <a href="https://up.htmlacademy.ru/htmlcss/20">
           website by
-          <img src="img\SVG\svg-sedona\logo-htmlacademy.svg" alt="htmlacademy" width="115" height="41">
+          <img src="img/SVG/svg-sedona/logo-htmlacademy.svg" alt="htmlacademy" width="115" height="41">
         </a>
       </section>
       <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
