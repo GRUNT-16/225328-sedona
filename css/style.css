@@ -1,0 +1,517 @@
+@font-face {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+  local: url(fonts/ptsans.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 700;
+  local: url(fonts/ptsansbold.woff2) format(woff2);
+}
+
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.page-header {
+  width: 100%;
+}
+
+.main-menu {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-menu-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.page-header-logo {
+  margin-top: -35px;
+}
+
+.main-menu-wrapper {
+  width: 100%;
+  height: 22px;
+  background-color: white;
+  width: 100%;
+}
+
+.main-menu ul {
+  padding: 0px;
+  margin-top: 5px;
+}
+
+.main-menu li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-menu a {
+  text-decoration: none;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.main-menu a:link {
+  color: black;
+}
+
+.main-menu a:visited {
+  color: black;
+}
+
+.main-menu a:hover {
+  color: #81b3d2;
+}
+
+.main-menu a:active {
+  color: #cacaca;
+}
+
+.intro-picture {
+  background:
+  url("https://s8.hostingkartinok.com/uploads/images/2018/03/c898b0becf0a9383eeb43ebed2b68e19.jpg");
+  background-position: top;
+  margin-bottom: 50px;
+  background-size: cover;
+}
+
+.welcome {
+  background:
+  url("https://cdn1.savepice.ru/uploads/2018/3/16/f6a548fdac51b92b74fe9f553b100bf9-full.png") no-repeat center;
+  height: 507px;
+  width: auto;
+  background-size: 540px;
+  background-position: bottom;
+}
+
+.clipping-mask {
+  background:
+  url("https://cdn1.savepice.ru/uploads/2018/3/16/928c3456832c0ede3f6df3f13683b540-full.png") no-repeat;
+  background-position: bottom;
+  background-size: 100% 56px;
+  padding: 56px;
+  margin-top: 0px;
+}
+
+.advantages-large-1 {
+  width: 100%;
+  display: flex;
+}
+
+.advantages-large-1 .advantages-text-block {
+  background-color: #81b3d2;
+  height: 231px;
+  width: 33%;
+  text-align: center;
+  color: white;
+  padding-top: 25px;
+  margin-top: 54px;
+  margin-top: 0px;
+  min-width: 190px;
+  flex-grow: 1;
+}
+
+.advantages-large-1 h3 {
+  font-size: 21px;
+  font-weight: 700;
+  height: 15px;
+  margin-bottom: 52px;
+  line-height: 21px;
+}
+
+.advantages-large-1 span {
+  font-size: 14px;
+}
+
+.advantages-large-1 p {
+  font-size: 14px;
+  margin-top: 21px;
+  line-height: 21px;
+}
+
+.advantages-large-1 .advantages-image-block {
+  float: right;
+  background-size: cover;
+  min-width: 700px;
+  flex-grow: 10;
+}
+
+.intro h2 {
+  font-weight: bold;
+  font-size: 21px;
+  text-align: center;
+}
+
+.intro p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 31px;
+}
+
+.advice {
+  clear: both;
+  flex-direction: row;
+}
+
+.advice-list {
+  width: 100%;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.advice-item:nth-child(1) {
+  background-image: url("https://thumb.ibb.co/hMUrkH/advice_icon_1.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.advice-item {
+  min-height: 170px;
+  list-style: none;
+  text-align: center;
+  padding-top: 70px;
+  margin-top: 60px;
+}
+
+.advice-item:nth-child(2) {
+  background-image: url("https://thumb.ibb.co/jGS0ec/advice_icon_2.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.advice-item:nth-child(3) {
+  background-image: url("https://thumb.ibb.co/bLNBkH/advice_icon_3.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.advantages-large-2 {
+  width: 100%;
+  display: flex;
+}
+
+.advantages-large-2 .advantages-image-block {
+  background-size: cover;
+  min-width: 700px;
+  flex-grow: 3;
+}
+
+.advantages-large-2 .advantages-text-block {
+  background-color: #81b3d2;
+  height: 231px;
+  width: 33%;
+  text-align: center;
+  color: white;
+  padding-top: 25px;
+  margin-top: 54px;
+  margin-top: 0px;
+  min-width: 190px;
+  float: right;
+  flex-grow: 1;
+}
+
+.advantages-large-2 h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.advantages-large-2 span,
+.advantages-large-2 p {
+  font-size: 14px;
+}
+
+.advantages-list {
+  width: 100%;
+  list-style: none;
+  margin: 0px;
+  margin-top: -5px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #eeeeee;
+  height: 256px;
+}
+
+.advantages-item {
+  min-height: 170px;
+  list-style: none;
+  text-align: center;
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-top: 30px;
+}
+
+
+.interested-in-caption {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.interested-in-caption h2 {
+  font-size: 30px;
+}
+
+.interested-in-caption p {
+  font-size: 14px;
+}
+
+.interested-in-caption button {
+  width: 568px;
+  height: 86px;
+  background-color: #766357;
+  border: none;
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.interested-in-caption button:hover {
+  background-color: #604e43;
+}
+
+.interested-in-caption button:active {
+  background-color: #503e33;
+  color: #928a85;
+}
+
+.trip-info {
+  background-color: yellow;
+  width: 458px;
+  height:396px;
+  position: absolute;
+  top: 2135px;
+  left: 476px;
+  background-color: white;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+#trip-info-arrival-date {
+  margin-top: 55px;
+  margin-left: 18px;
+  width: 335px;
+  background-color: #f2f2f2;
+  border: none;
+  height: 37px;
+}
+
+.trip-info-1-label {
+  height: 37px;
+  font-size: 14px;
+}
+
+#trip-info-departure-date {
+  margin-top: 30px;
+  margin-left: 13px;
+  width: 325px;
+  background-color: #f2f2f2;
+  border: none;
+  height: 37px;
+  padding-left: 12px;
+}
+
+.trip-info-2-label {
+  font-size: 14px;
+}
+
+.trip-info-num-wrapper {
+  margin-top: 30px;
+}
+
+#trip-info-adults-quantity {
+  text-align: center;
+  width: 114px;
+  height: 37px;
+  background-color: #f2f2f2;
+  border: none;
+  margin-left: 30px;
+}
+
+.trip-info-3-label {
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.adults {
+  display: inline;
+}
+
+.children {
+  float: right;
+}
+
+.trip-info-4-label {
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+#trip-info-children-quantity {
+  text-align: center;
+  width: 114px;
+  height: 37px;
+  background-color: #f2f2f2;
+  border: none;
+  margin-right: 13px;
+  margin-left: 30px;
+}
+
+.trip-info button {
+  width: 445px;
+  height: 58px;
+  background-color: #81b3d2;
+  color: white;
+  border: none;
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 54px;
+}
+
+.map {
+  margin-bottom
+}
+
+.page-footer {
+  height: 121px;
+  position: absolute;
+  width: 100%;
+  top: 2760px;
+}
+
+.social a {
+  color: transparent;
+}
+
+.social {
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.footer-wrapper {
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding-left: 20px;
+  height: 81px;
+  padding-top: 40px;
+}
+
+.hashtag {
+  width: 300px;
+}
+
+.hashtag a {
+  text-decoration: none;
+  color: black;
+  font-size: 21px;
+  font-weight: bold;
+  display: block;
+  margin-top: 13px;
+}
+
+.twitter-icon,
+.facebook-icon,
+.youtube-icon {
+  padding: 11px;
+  background-position: center;
+  margin-top: 7px;
+}
+
+.twitter-background,
+.facebook-background,
+.youtube-background {
+  background-color: #81b3d2;
+  width: 40px;
+  height: 40px;
+  margin-left: -150px;
+}
+
+a:active #twitter,
+a:active #facebook,
+a:active #youtube {
+  fill: #88b6d1;
+}
+
+a:active .twitter-background,
+a:active .facebook-background,
+a:active .youtube-background {
+  background-color: #5496bd;
+}
+
+a:hover .twitter-background,
+a:hover .facebook-background,
+a:hover .youtube-background {
+  background-color: #669ec0;
+}
+
+.html-academy-icon {
+  background: url("https://svgshare.com/i/5tt.svg") no-repeat;
+  width: 115px;
+  height: 41px;
+  float: right;
+}
+
+.html-academy-logo {
+  width: 210px;
+  margin-right: 40px;
+}
+
+.html-academy-logo p {
+  margin-bottom: -25px;
+  color: black;
+}
+
+.html-academy-logo a {
+  text-decoration: none;
+}
+
+a:hover .html-academy-icon {
+  background: url("https://s8.hostingkartinok.com/uploads/images/2018/03/1fe06512982ce07665473f989ce25e76.png") no-repeat;
+}
+
+a:active .html-academy-icon {
+  background: url("https://s8.hostingkartinok.com/uploads/images/2018/03/a07843aa87369c6f9e48a512f8d38e27.png") no-repeat;
+}
+
+a:hover .btn-submit {
+  background-color: #669ec0;
+}
+
+a:active .btn-submit {
+  color: #94b9d2;
+  background-color: #5496bd;
+}
+
+div:hover #trip-info-arrival-date,
+div:hover #trip-info-departure-date,
+div:hover #trip-info-adults-quantity,
+div:hover #trip-info-children-quantity {
+  background-color: #ebebeb
+}
+
+div:active #trip-info-arrival-date,
+div:active #trip-info-departure-date,
+div:active #trip-info-adults-quantity,
+div:active #trip-info-children-quantity {
+  background-color: white;
+  border: 1px solid #ebebeb;
+}
