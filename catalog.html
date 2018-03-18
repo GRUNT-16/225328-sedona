@@ -3,15 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-menu">
-        <ul>
-          <li><a href="#">информация</a></li>
-          <li><a href="#">фото и видео</a></li>
-          <li><a href="#">карта штата</a></li>
-          <li><a>гостиницы</a></li>
+        <ul class="site-navigation">
+          <div class="main-menu-wrapper">
+            <div class="main-menu-container">
+              <li><a href="#">информация</a></li>
+              <li><a href="#">фото и видео</a></li>
+              <a><h1><img src="img/sedona-logo.png" class="page-header-logo" width="137" height="70" alt="logo"></h1></a>
+              <li><a href="#">карта штата</a></li>
+              <li><a href="catalog.html">гостиницы</a></li>
+            </div>
+          </div>
         </ul>
       </nav>
       <a href="index.html">
@@ -20,33 +26,21 @@
       <form method="post" name="filter-values" action="https://echo.htmlacademy.ru">
         <h5 class="filter-caption">инфраструктура:</h5>
         <section class="infrostructure">
-          <div class="swimming-pool">
-            <input type="checkbox" id="filter-infrostructure-checkbox-1" name="swimming-pool" checked>
-            <label for="filter-infrostructure-checkbox-1">бассейн</label>
-          </div>
-          <div class="parking">
-            <input type="checkbox" id="filter-infrastructure-checkbox-2" name="parking">
-            <label for="filter-infrastructure-checkbox-2">парковка</label>
-          </div>
-          <div class="wi-fi">
-            <input type="checkbox" id="filter-infrostructure-checkbox-3" name="wifi">
-            <label for="filter-infrostructure-checkbox-3">wifi</label>
-          </div>
+          <input type="checkbox" id="filter-infrostructure-checkbox-1" name="swimming-pool" checked>
+          <label for="filter-infrostructure-checkbox-1">бассейн</label>
+          <input type="checkbox" id="filter-infrastructure-checkbox-2" name="parking">
+          <label for="filter-infrastructure-checkbox-2">парковка</label>
+          <input type="checkbox" id="filter-infrostructure-checkbox-3" name="wifi">
+          <label for="filter-infrostructure-checkbox-3">wifi</label>
         </section>
         <section class="type">
           <h5 class="filter-caption">тип жилья</h5>
-          <div class="hotel">
-            <input type="checkbox" id="filter-type-checkbox-1" name="hotel" checked>
-            <label for="filter-type-checkbox-1">гостиница</label>
-          </div>
-          <div class="motel">
-            <input type="checkbox" id="filter-type-checkbox-2" name="motel" checked>
-            <label for="filter-type-checkbox-2">мотель</label>
-          </div>
-          <div class="apartments">
-            <input type="checkbox" id="filter-type-checkbox-3" name="apartments" checked>
-            <label for="filter-type-checkbox-3">апартаменты</label>
-          </div>
+          <input type="checkbox" id="filter-type-checkbox-1" name="hotel" checked>
+          <label for="filter-type-checkbox-1">гостиница</label>
+          <input type="checkbox" id="filter-type-checkbox-2" name="motel" checked>
+          <label for="filter-type-checkbox-2">мотель</label>
+          <input type="checkbox" id="filter-type-checkbox-3" name="apartments" checked>
+          <label for="filter-type-checkbox-3">апартаменты</label>
         </section>
         <section class="slider">
           <h5 class="filter-caption">стоимость в сутки (р)</h5>
@@ -125,29 +119,44 @@
         </li>
       </ul>
     </main>
-    <footer class="page-footer">
-      <div class="hashtag">
-        <a href="#">#visitsedona</a>
-      </div>
-      <div class="social">
-        <!--twitter-->
-        <a class="btn" href="#">
-          <img src="img/SVG/svg-sedona/twitter.svg" alt="twitter" width="17" height="15">
-        </a>
-        <!--facebook-->
-        <a class="btn" href="#">
-          <img src="img/SVG/svg-sedona/fb-icon.svg" alt="facebook" width="17" height="15">
-        </a>
-        <!--youtube-->
-        <a class="btn" href="#">
-          <img src="img/SVG/svg-sedona/youtube.svg" alt="youtube" width="17" height="15">
-        </a>
-      </div>
-      <div class="html-academy-logo">
-        <a href="#">
-          website by
-          <img src="img/SVG/svg-sedona/logo-htmlacademy.svg" alt="htmlacademy" width="115" height="41">
-        </a>
+    <footer class="page-footer-catalog">
+      <div class="footer-wrapper-catalog">
+        <div class="hashtag">
+          <a href="#">#visitsedona</a>
+        </div>
+        <div class="social">
+          <!--twitter-->
+          <a class="btn-1" href="#">
+            <div class="twitter-background-catalog">
+              <div class="twitter-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path id="twitter" fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
+              </div>
+            </div>
+          </a>
+          <!--facebook-->
+          <a class="btn-2" href="#">
+            <div class="facebook-background">
+              <div class="facebook-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path id="facebook" fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+              </div>
+            </div>
+          </a>
+          <!--youtube-->
+          <a class="btn-3" href="#">
+            <div class="youtube-background">
+              <div class="youtube-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path id="youtube" fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="html-academy-logo">
+          <a href="#">
+            website by
+            <div class="html-academy-icon">
+            </div>
+          </a>
+        </div>
       </div>
     </footer>
   </body>
