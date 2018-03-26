@@ -13,6 +13,12 @@
 body {
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
+  line-height: 1.5;
+}
+
+p,
+span {
+  font-size: 14px;
 }
 
 .page-header {
@@ -436,6 +442,10 @@ body {
   margin-top: 7px;
 }
 
+.facebook-icon {
+  margin-left: 3px;
+}
+
 .twitter-background,
 .facebook-background,
 .youtube-background {
@@ -514,4 +524,376 @@ div:active #trip-info-adults-quantity,
 div:active #trip-info-children-quantity {
   background-color: white;
   border: 1px solid #ebebeb;
+}
+
+.page-footer-catalog {
+  border-top: 1px solid #e5e5e5;
+}
+
+label.visual-checkbox {
+ width: 32px;
+ height: 26px;
+ display: block;
+ position: relative;
+}
+
+input[type="checkbox"] + span {
+ position: absolute;
+ left: 0; top: 0;
+ width: 100%; height: 100%;
+ background: url("https://svgshare.com/i/5uR.svg") no-repeat;
+ cursor: pointer;
+ margin-left: 5px;
+}
+
+.filter-background {
+  background: url("https://s8.hostingkartinok.com/uploads/images/2018/03/9b39f262eef7dbcf48227050ac4ef415.jpg") no-repeat;
+  width: 100%;
+  background-size: 100% auto;
+  margin-top: -25px;
+  color: white;
+  margin-top: 0px;
+  height: 217px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + span {
+  background: url("https://svgshare.com/i/5sq.svg") no-repeat;
+}
+
+.visual-checkbox  p{
+  display: block;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.filter-caption {
+  color: white;
+  font-size: 16px;
+  cursor: default;
+}
+ span.active {
+   color: #766357;
+   font-weight: bold;
+ }
+
+.infrostructure {
+  display: inline-block;
+  margin-left: 72px;
+}
+
+.type {
+  display: inline-block;
+  margin-left: 158px;
+}
+
+div .label-for-slider {
+  cursor: default;
+}
+
+.slider-section {
+  display: inline;
+  float: right;
+  text-align: center;
+  margin-right: 72px;
+}
+
+.slider {
+  width: 318px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-top: 20px;
+}
+
+.label-for-slider {
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 4px;
+}
+
+span.from-value {
+  border-right: 1px solid white;
+  padding-right: 67px;
+}
+
+span.to-value {
+  padding-left: 53px;
+}
+
+.interval {
+  background-color: white;
+  height: 100%;
+  width: 245px;
+}
+
+.slider span.from {
+  right: 385px;
+}
+
+.slider span.from:hover {
+  right: 384px;
+  height: 24px;
+}
+
+.slider span {
+  background: url("http://www.picshare.ru/uploads/180324/167fF5341A.png") no-repeat;
+  height: 22px;
+  width: 20px;
+  position: absolute;
+  top: 175px;
+}
+
+.slider span.to {
+  right: 150px;
+}
+
+.slider span.to:hover {
+  right: 149px;
+  height: 24px;
+}
+
+.slider span:hover {
+  background: url("http://www.picshare.ru/uploads/180324/CFQw0CAiRt.png") no-repeat;
+  width: 22px;
+  top: 174px;
+}
+
+.search-options {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.search-options-caption {
+  display: inline;
+  font-size: 21px;
+  margin-left: 75px;
+}
+
+.sort-by {
+  display: flex;
+  margin-left: 50px;
+  width: 370px;
+  justify-content: space-between;
+}
+
+.show{
+  border: 2px solid white;
+  border-radius: 3px;
+  background-color: transparent;
+  color: white;
+  width: 133px;
+  font-size: 14px;
+  height: 32px;
+  margin-top: 32px;
+}
+
+button.show:hover {
+  background-color: white;
+  color: black;
+}
+
+.search-options-text-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.sort-by a {
+  text-decoration: underline dotted #95bed8;
+  color: #cacaca;
+}
+
+.sort-by a:hover {
+  color: #95bed8;
+}
+.sort-by a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.sort-by .active{
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.sort-by {
+  font-size: 12px;
+}
+
+.sort-by .active:hover {
+  color: black
+}
+
+.icon-down-img {
+  width: 11px;
+  height: 11px;
+  cursor: pointer;
+}
+
+#icon-down {
+  fill: #cacaca;
+}
+
+#icon-down:hover {
+  fill: #231f20;
+}
+
+#icon-down:active {
+  fill: #81b3d2;
+}
+
+.icon-up {
+  width: 11px;
+  height: 11px;
+  cursor: default;
+  margin-left:
+}
+
+#icon-up-img {
+  fill: #81b3d2;
+}
+
+.storing-buttons {
+  width: 35px;
+  display: inline;
+  float: right;
+  margin-top: -50px;
+  margin-right: 30px;
+}
+
+.hotel-list {
+  list-style: none;
+  margin-left: -40px;
+}
+
+.info h4 {
+  font-size: 21px;
+}
+
+.info {
+  margin-left: 200px;
+}
+.hotel img{
+  display: inline-block;
+  float: left;
+}
+
+span.position-2-1 {
+  padding-left: 38px;
+}
+
+span.position-2-2 {
+  padding-left: 67px;
+}
+
+span.position-2-3 {
+  padding-left: 23px;
+}
+
+.hotel {
+  border-bottom: 1px solid #e5e5e5;
+  padding-left: 72px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-size: 14px;
+}
+
+.info div.btn {
+  margin-top: 20px;
+}
+
+.info a.btn-1 {
+  height: 22px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  background-color: #81b3d2;
+  width: 105px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.info a.btn-1:hover {
+  background-color: #669ec0;
+}
+
+.info a.btn-1:active {
+  background-color: #5496bd;
+  color: #85b0cd;
+}
+
+.info {
+  margin-top: -40px;
+  padding-top: 0px;
+}
+
+div.span-wrapper {
+  margin-top: -20px;
+}
+
+.info a.btn-2 {
+  height: 22px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  background-color: #766357;
+  width: 142px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.info a.btn-2:hover {
+  background-color: #604e43;
+}
+
+.info a.btn-2:active {
+  background-color: #503e33;
+  color: #928a85;
+}
+
+.rating {
+  display: block;
+  float: right;
+  margin-top: -100px;
+  margin-right: 75px;
+}
+
+.rating p {
+  background-color: #f2f2f2;
+  color: #939393;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 50px;
+}
+
+.stars-1 {
+  background-image: url("https://svgshare.com/i/5ya.svg");
+  background-repeat: repeat-x;
+  padding-right: 75px;
+  margin-left: 15px;
+}
+
+.stars-2 {
+  background-image: url("https://svgshare.com/i/5ya.svg");
+  background-repeat: repeat-x;
+  padding-right: 55px;
+  margin-left: 35px;
+}
+
+.stars-3 {
+  background-image: url("https://svgshare.com/i/5ya.svg");
+  background-repeat: repeat-x;
+  padding-right: 38px;
+  margin-left: 50px;
+}
+
+li.hotel:nth-child(3) {
+  border: none;
 }
