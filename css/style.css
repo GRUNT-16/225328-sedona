@@ -1,17 +1,6 @@
-@font-face {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-weight: 400;
-  local: url(fonts/ptsans.woff2) format(woff2);
-}
-
-@font-face {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-weight: 700;
-  local: url(fonts/ptsansbold.woff2) format(woff2);
-}
-
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic');
 body {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans";
   text-transform: uppercase;
   line-height: 1.5;
 }
@@ -42,6 +31,7 @@ span {
 
 .page-header-logo {
   margin-top: -35px;
+  cursor: pointer;
 }
 
 .main-menu-wrapper {
@@ -298,30 +288,64 @@ span {
 }
 
 .trip-info {
-  background-color: yellow;
   width: 458px;
   height:396px;
-  position: absolute;
   top: 2135px;
   left: 476px;
   background-color: white;
   padding-left: 55px;
   padding-right: 55px;
+  margin-top: 10px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  margin: auto;
+  z-index: 10;
+  margin-top: -600px;
+  display: none;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.trip-info-show {
+  display: block;
+  animation: slide-right 0.6s;
 }
 
 #trip-info-arrival-date {
   margin-top: 55px;
   margin-left: 18px;
-  width: 335px;
+  width: 322px;
   background-color: #f2f2f2;
   border: none;
   height: 37px;
+  padding-left: 12px;
 }
 
 .trip-info-1-label {
   height: 37px;
   font-size: 14px;
 }
+
+.calendar-1,
+.calendar-2 {
+  background-image: url("https://cdn1.savepice.ru/uploads/2018/3/29/7d85948272b5c97b5b40ff7db0c7205a-full.png");
+  background-repeat: no-repeat;
+  background-position: 300px center;
+}
+
+.calendar-1:hover,
+.calendar-2:hover {
+  background-image: url("https://svgshare.com/i/62T.svg");
+}
+
+
 
 #trip-info-departure-date {
   margin-top: 30px;
@@ -341,13 +365,49 @@ span {
   margin-top: 30px;
 }
 
+.trip-info span {
+  display: block;
+}
+
+.trip-info button:hover {
+  background-color: #669ec0;
+}
+
+.trip-info button:active {
+  background-color: #5496bd;
+  color: #94b9d2;
+}
+
+.children {
+  margin-top: -40px;
+}
+
 #trip-info-adults-quantity {
   text-align: center;
   width: 114px;
   height: 37px;
-  background-color: #f2f2f2;
   border: none;
   margin-left: 30px;
+  background:
+   url("https://cdn1.savepice.ru/uploads/2018/3/30/e1ee43548c5bd3e6d5938126c964ff61-full.png") no-repeat 12px center,
+   url("https://cdn1.savepice.ru/uploads/2018/3/30/970654831a986bc3d66667bf87e004be-full.png") no-repeat 90px center,
+   #f2f2f2;
+}
+
+#trip-info-adults-quantity:hover,
+#trip-info-children-quantity:hover {
+  background:
+  url("https://cdn1.savepice.ru/uploads/2018/3/30/661d131f78c6d0895642d7bcce82ca11-full.png") no-repeat 12px center,
+  url("https://cdn1.savepice.ru/uploads/2018/3/30/07cc642c70426ff099dd9873bd71da68-full.png") no-repeat 90px center,
+  #ebebeb;
+}
+
+#trip-info-adults-quantity:active,
+#trip-info-children-quantity:active {
+  background:
+  url("https://cdn1.savepice.ru/uploads/2018/3/30/675cf9c75a1227db881c65ea9d893c95-full.png") no-repeat 12px center,
+  url("https://cdn1.savepice.ru/uploads/2018/3/30/761d0123562c2ca39082d31aa3436d7d-full.png") no-repeat 90px center,
+  white;
 }
 
 .trip-info-3-label {
@@ -376,6 +436,10 @@ span {
   border: none;
   margin-right: 13px;
   margin-left: 30px;
+  background:
+   url("https://cdn1.savepice.ru/uploads/2018/3/30/e1ee43548c5bd3e6d5938126c964ff61-full.png") no-repeat 12px center,
+   url("https://cdn1.savepice.ru/uploads/2018/3/30/970654831a986bc3d66667bf87e004be-full.png") no-repeat 90px center,
+   #f2f2f2;
 }
 
 .trip-info button {
@@ -389,15 +453,18 @@ span {
   margin-top: 54px;
 }
 
-.map {
-  margin-bottom
-}
-
 .page-footer {
   height: 121px;
   position: absolute;
   width: 100%;
-  top: 2760px;
+  top: 2780px;
+}
+
+.map {
+  background-image: url("https://cdn1.savepice.ru/uploads/2018/3/27/1f221dc523bba4b851e5d682776b8dd5-full.jpg");
+  height: 600px;
+  background-size: 100% 600px;
+  background-repeat: no-repeat;
 }
 
 .social a {
@@ -513,17 +580,26 @@ a:active .btn-submit {
 
 div:hover #trip-info-arrival-date,
 div:hover #trip-info-departure-date,
-div:hover #trip-info-adults-quantity,
-div:hover #trip-info-children-quantity {
+div div:hover #trip-info-adults-quantity,
+div div:hover #trip-info-children-quantity {
   background-color: #ebebeb
 }
 
 div:active #trip-info-arrival-date,
-div:active #trip-info-departure-date,
-div:active #trip-info-adults-quantity,
-div:active #trip-info-children-quantity {
+div:active #trip-info-departure-date {
   background-color: white;
   border: 1px solid #ebebeb;
+  width: 320px;
+  height: 35px;
+  background-image: url("https://cdn1.savepice.ru/uploads/2018/3/29/01c5d449b6e74438eba5601c9769bc74-full.png");
+}
+
+div div:active #trip-info-adults-quantity,
+div div:active #trip-info-children-quantity {
+  background-color: white;
+  border: 1px solid #ebebeb;
+  width: 112px;
+  height: 35px;
 }
 
 .page-footer-catalog {
