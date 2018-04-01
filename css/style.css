@@ -3,6 +3,8 @@ body {
   font-family: "PT Sans";
   text-transform: uppercase;
   line-height: 1.5;
+  width: 100%;
+  background-color: #f1f1f1;
 }
 
 p,
@@ -12,6 +14,24 @@ span {
 
 .page-header {
   width: 100%;
+  font-weight: bold;
+}
+
+.calendar-icon-1,
+.calendar-icon-2 {
+  height: 24px;
+  width: 22px;
+  margin-left: 410px;
+  margin-top: -30px;
+  fill: #cacaca;
+}
+
+svg.calendar:hover {
+  fill: #000000;
+}
+
+svg.calendar:active {
+  fill: #81b3d2;
 }
 
 .main-menu {
@@ -108,7 +128,7 @@ span {
 .advantages-large-1 .advantages-text-block {
   background-color: #81b3d2;
   height: 231px;
-  width: 33%;
+  width: 400px;
   text-align: center;
   color: white;
   padding-top: 25px;
@@ -209,7 +229,7 @@ span {
 .advantages-large-2 .advantages-text-block {
   background-color: #81b3d2;
   height: 231px;
-  width: 33%;
+  width: 400px;
   text-align: center;
   color: white;
   padding-top: 25px;
@@ -290,17 +310,185 @@ span {
 .trip-info {
   width: 458px;
   height:396px;
-  top: 2135px;
-  left: 476px;
+  position: absolute;
+  top: 2752px;
   background-color: white;
   padding-left: 55px;
   padding-right: 55px;
   margin-top: 10px;
   box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-  margin: auto;
   z-index: 10;
   margin-top: -600px;
   display: none;
+}
+
+.trip-info input,
+.trip-info label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.filter-range {
+  width: 330px;
+  margin: 50px auto; /* для демо */
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.trip-info input,
+.trip-info label,
+.trip-info button {
+  text-transform: uppercase;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
 }
 
 @keyframes slide-right {
@@ -318,6 +506,13 @@ span {
   animation: slide-right 0.6s;
 }
 
+.page-content,
+.page-header {
+  background-color: white;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 #trip-info-arrival-date {
   margin-top: 55px;
   margin-left: 18px;
@@ -327,25 +522,10 @@ span {
   height: 37px;
   padding-left: 12px;
 }
-
 .trip-info-1-label {
   height: 37px;
   font-size: 14px;
 }
-
-.calendar-1,
-.calendar-2 {
-  background-image: url("https://cdn1.savepice.ru/uploads/2018/3/29/7d85948272b5c97b5b40ff7db0c7205a-full.png");
-  background-repeat: no-repeat;
-  background-position: 300px center;
-}
-
-.calendar-1:hover,
-.calendar-2:hover {
-  background-image: url("https://svgshare.com/i/62T.svg");
-}
-
-
 
 #trip-info-departure-date {
   margin-top: 30px;
@@ -382,32 +562,35 @@ span {
   margin-top: -40px;
 }
 
+#trip-info-arrival-date:hover,
+#trip-info-departure-date:hover {
+  background: #ebebeb;
+}
+
+#trip-info-arrival-date:focus,
+#trip-info-departure-date:focus {
+  background: white;
+  border: 1px solid #cacaca;
+}
+
 #trip-info-adults-quantity {
   text-align: center;
   width: 114px;
   height: 37px;
   border: none;
   margin-left: 30px;
-  background:
-   url("https://cdn1.savepice.ru/uploads/2018/3/30/e1ee43548c5bd3e6d5938126c964ff61-full.png") no-repeat 12px center,
-   url("https://cdn1.savepice.ru/uploads/2018/3/30/970654831a986bc3d66667bf87e004be-full.png") no-repeat 90px center,
-   #f2f2f2;
+  background: #f2f2f2;
 }
 
 #trip-info-adults-quantity:hover,
 #trip-info-children-quantity:hover {
-  background:
-  url("https://cdn1.savepice.ru/uploads/2018/3/30/661d131f78c6d0895642d7bcce82ca11-full.png") no-repeat 12px center,
-  url("https://cdn1.savepice.ru/uploads/2018/3/30/07cc642c70426ff099dd9873bd71da68-full.png") no-repeat 90px center,
-  #ebebeb;
+  background: #ebebeb;
 }
 
-#trip-info-adults-quantity:active,
-#trip-info-children-quantity:active {
-  background:
-  url("https://cdn1.savepice.ru/uploads/2018/3/30/675cf9c75a1227db881c65ea9d893c95-full.png") no-repeat 12px center,
-  url("https://cdn1.savepice.ru/uploads/2018/3/30/761d0123562c2ca39082d31aa3436d7d-full.png") no-repeat 90px center,
-  white;
+#trip-info-adults-quantity:focus,
+#trip-info-children-quantity:focus {
+  background: white;
+  border: 1px solid #cacaca;
 }
 
 .trip-info-3-label {
@@ -436,10 +619,55 @@ span {
   border: none;
   margin-right: 13px;
   margin-left: 30px;
-  background:
-   url("https://cdn1.savepice.ru/uploads/2018/3/30/e1ee43548c5bd3e6d5938126c964ff61-full.png") no-repeat 12px center,
-   url("https://cdn1.savepice.ru/uploads/2018/3/30/970654831a986bc3d66667bf87e004be-full.png") no-repeat 90px center,
-   #f2f2f2;
+}
+
+span.minus-1 {
+  margin-left: 115px;
+  margin-top: -28px;
+}
+
+#plus-1-icon,
+#minus-1-icon,
+#minus-2-icon,
+#plus-2-icon {
+  fill: #cacaca;
+}
+
+span.plus-1 {
+  margin-left: 190px;
+  margin-top: -20px;
+}
+
+span.plus-2 {
+  margin-left: 160px;
+  margin-top: -20px;
+}
+
+svg:hover #plus-1-icon,
+svg:hover #minus-1-icon,
+svg:hover #minus-2-icon,
+svg:hover #plus-2-icon {
+  fill: #000000;
+}
+
+svg:active #minus-1-icon,
+svg:active #plus-1-icon,
+svg:active #minus-2-icon,
+svg:active #plus-2-icon{
+  fill: #81b3d2;
+}
+
+span.minus-2 {
+  margin-left: 85px;
+  margin-top: -28px;
+}
+
+span.plus-2 {
+
+}
+
+.children {
+  padding-top: 10px;
 }
 
 .trip-info button {
@@ -457,14 +685,8 @@ span {
   height: 121px;
   position: absolute;
   width: 100%;
-  top: 2780px;
-}
-
-.map {
-  background-image: url("https://cdn1.savepice.ru/uploads/2018/3/27/1f221dc523bba4b851e5d682776b8dd5-full.jpg");
-  height: 600px;
-  background-size: 100% 600px;
-  background-repeat: no-repeat;
+  top: 2870px;
+  left: 160px;
 }
 
 .social a {
@@ -481,7 +703,7 @@ span {
 .footer-wrapper {
   display:flex;
   justify-content: space-between;
-  width: 100%;
+  width: 1180px;
   background-color: rgba(255, 255, 255, 0.9);
   padding-left: 20px;
   height: 81px;
@@ -771,6 +993,11 @@ button.show:hover {
   color: black;
 }
 
+.page-footer {
+  margin-top: -130px;
+  width: 1200px;
+}
+
 .search-options-text-wrapper {
   display: flex;
   align-items: center;
@@ -972,4 +1199,8 @@ div.span-wrapper {
 
 li.hotel:nth-child(3) {
   border: none;
+}
+
+.slider-section {
+  margin-top: -30px;
 }

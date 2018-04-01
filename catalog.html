@@ -36,17 +36,21 @@
             <label class="visual-checkbox"><input type="checkbox" id="filter-type-checkbox-3" name="apartments" checked><span></span><p>апартаменты</p></label>
           </section>
           <section class="slider-section">
-            <h5 class="filter-caption">стоимость в сутки (р)</h5>
-            <div class="label-for-slider">
-              <span class="from-value">от 0</span>
-              <span class="to-value">до 3000</span>
+            <div class="filter-range">
+              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
             </div>
-            <div class="slider">
-              <span class="from"></span>
-              <div class="interval"></div>
-              <span class="to"></span>
-            </div>
-            <button class="show">показать</button>
           </section>
         </form>
       </div>
