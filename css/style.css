@@ -312,6 +312,7 @@ svg.calendar:active {
   height:396px;
   position: absolute;
   top: 2752px;
+  left: 668px;
   background-color: white;
   padding-left: 55px;
   padding-right: 55px;
@@ -685,8 +686,8 @@ span.plus-2 {
   height: 121px;
   position: absolute;
   width: 100%;
-  top: 2870px;
-  left: 160px;
+  top: 2861px;
+  left: 352px;
 }
 
 .social a {
